@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <meta charset="utf-8" />
+        <style>
+            .content {
+                display: flex;
+                display: -webkit-flex;
+                flex-direction: row;
+            }
+
+            .content .flex-item {
+                width: 50%;
+                text-align: center
+            }
+
+            .content .flex-item:first-child {
+                border-right: 1px solid
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="flex-item">
+                <h3>Rxjs Query Sample</h3>
+                <label for="rxQuery">set your Rx query condition:</label>
+                <input id="rxQuery" name="rxQuery" type="text" value=""/>
+                <p id="resultMapRx" name="result"></p>
+            </div>
+            <div class="flex-item">
+                <h3>NativeJs Query Sample</h3>
+                <label for="nativeQuery">set your nativeJs query condition:</label>
+                <input id="nativeQuery" name="nativeQuery" type="text" value=""/>
+                <p id="resultMapNative" name="result"></p>
+            </div>
+        </div>
+    </body>
+</html>

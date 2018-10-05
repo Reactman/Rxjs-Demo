@@ -1,0 +1,27 @@
+{
+  "name": "rxjs-demo",
+  "version": "1.0.0",
+  "description": "demo for rxjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --inline --hot"
+  },
+  "keywords": [
+    "rxjs"
+  ],
+  "author": "Ubuntu",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-manifest-plugin": "^2.0.3"
+  }
+}
